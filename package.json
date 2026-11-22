@@ -1,0 +1,31 @@
+{
+  "name": "portscout-lite",
+  "version": "0.1.0",
+  "description": "Fast CLI scanner for detecting port declarations and configuration conflicts",
+  "type": "module",
+  "bin": {
+    "portscout": "./src/cli.js"
+  },
+  "exports": "./src/portscout.js",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "port",
+    "scanner",
+    "conflict",
+    "cli",
+    "env",
+    "developer-tools"
+  ],
+  "author": "PortScout Contributors",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

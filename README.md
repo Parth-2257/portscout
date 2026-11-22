@@ -1,25 +1,25 @@
-# PortScout Lite
+# PortScout
 
-PortScout Lite is a lightweight Node.js command-line tool that recursively scans your project for common port assignments in configuration files and scripts. It detects potential duplicate port declarations to help prevent conflicts before launching local services.
+PortScout is a lightweight Node.js command-line tool that recursively scans your project for common port assignments in configuration files and scripts. It detects potential duplicate port declarations to help prevent conflicts before launching local services.
 
 ## Installation
 
 Run directly with npx without installing:
 
 ```bash
-npx portscout-lite
+npx portscout
 ```
 
 Or install globally via npm:
 
 ```bash
-npm install -g portscout-lite
+npm install -g portscout
 ```
 
 Or as a development dependency:
 
 ```bash
-npm install --save-dev portscout-lite
+npm install --save-dev portscout
 ```
 
 ## Usage

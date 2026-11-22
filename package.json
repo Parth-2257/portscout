@@ -1,5 +1,5 @@
 {
-  "name": "portscout-lite",
+  "name": "portscout",
   "version": "0.1.0",
   "description": "Fast CLI scanner for detecting port declarations and configuration conflicts",
   "type": "module",

@@ -25,7 +25,7 @@ async function getVersion() {
 }
 
 function showHelp() {
-  console.log(`PortScout Lite - Fast Port Conflict Detector
+  console.log(`PortScout - Fast Port Conflict Detector
 
 Usage:
   portscout [directory] [options]

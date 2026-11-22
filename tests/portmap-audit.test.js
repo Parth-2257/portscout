@@ -6,7 +6,7 @@ import {
   parsePackageJsonContent,
   detectConflicts,
   formatTerminalReport
-} from '../src/portscout.js';
+} from '../src/portmap-audit.js';
 
 test('isValidPort: validates numeric port ranges', () => {
   assert.equal(isValidPort(3000), true);
@@ -116,7 +116,7 @@ test('formatTerminalReport: outputs expected structure and conflict warnings', (
   };
 
   const report = formatTerminalReport(analysis);
-  assert.match(report, /PortScout/);
+  assert.match(report, /portmap-audit/);
   assert.match(report, /Scanning project\.\.\./);
   assert.match(report, /PORT 3000/);
   assert.match(report, /frontend\/\.env/);

@@ -146,7 +146,7 @@ export function detectConflicts(declarations) {
 
 export function formatTerminalReport(analysis) {
   const output = [];
-  output.push('PortScout\n');
+  output.push('portmap-audit\n');
   output.push('Scanning project...\n');
 
   const portKeys = Object.keys(analysis.ports);

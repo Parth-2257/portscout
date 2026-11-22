@@ -1,25 +1,25 @@
-# PortScout
+# portmap-audit
 
-PortScout is a lightweight Node.js command-line tool that recursively scans your project for common port assignments in configuration files and scripts. It detects potential duplicate port declarations to help prevent conflicts before launching local services.
+portmap-audit is a lightweight Node.js command-line tool that recursively scans your project for common port assignments in configuration files and scripts. It detects potential duplicate port declarations to help prevent conflicts before launching local services.
 
 ## Installation
 
 Run directly with npx without installing:
 
 ```bash
-npx portscout
+npx portmap-audit
 ```
 
 Or install globally via npm:
 
 ```bash
-npm install -g portscout
+npm install -g portmap-audit
 ```
 
 Or as a development dependency:
 
 ```bash
-npm install --save-dev portscout
+npm install --save-dev portmap-audit
 ```
 
 ## Usage
@@ -27,32 +27,32 @@ npm install --save-dev portscout
 Scan current working directory:
 
 ```bash
-portscout
+portmap-audit
 ```
 
 Scan a specific folder:
 
 ```bash
-portscout ./packages/api
+portmap-audit ./packages/api
 ```
 
 Output results as JSON:
 
 ```bash
-portscout --json
+portmap-audit --json
 ```
 
 Display help or version:
 
 ```bash
-portscout --help
-portscout --version
+portmap-audit --help
+portmap-audit --version
 ```
 
 ## Example Output
 
 ```text
-PortScout
+portmap-audit
 
 Scanning project...
 

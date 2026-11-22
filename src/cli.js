@@ -8,7 +8,7 @@ import {
   scanDirectory,
   detectConflicts,
   formatTerminalReport
-} from './portscout.js';
+} from './portmap-audit.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -25,10 +25,10 @@ async function getVersion() {
 }
 
 function showHelp() {
-  console.log(`PortScout - Fast Port Conflict Detector
+  console.log(`portmap-audit - Fast Port Conflict Detector
 
 Usage:
-  portscout [directory] [options]
+  portmap-audit [directory] [options]
 
 Options:
   --json          Output results in JSON format
@@ -36,8 +36,8 @@ Options:
   -v, --version   Display version number
 
 Examples:
-  portscout
-  portscout ./my-project --json
+  portmap-audit
+  portmap-audit ./my-project --json
 `);
 }
 
@@ -51,7 +51,7 @@ async function main() {
 
   if (args.includes('--version') || args.includes('-v')) {
     const ver = await getVersion();
-    console.log(`portscout v${ver}`);
+    console.log(`portmap-audit v${ver}`);
     process.exit(0);
   }
 
